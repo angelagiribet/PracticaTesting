@@ -11,7 +11,8 @@ import java.net.ConnectException;
 import java.util.Date;
 
 public class CertificationAuthorityImpl {
-    public boolean sendPIN (Nif nif, Date date) throws NifNotRegisteredException, IncorrectValDateException, AnyMobileRegisteredException,
+    public boolean sendPIN (Nif nif, Date date) throws NifNotRegisteredException, IncorrectValDateException,
+            AnyMobileRegisteredException,
             ConnectException {
         return true;
     }

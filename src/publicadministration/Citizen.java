@@ -1,6 +1,6 @@
 package publicadministration;
 
-import data.Nif
+import data.Nif;
 
 public class Citizen {
 

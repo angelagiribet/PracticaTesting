@@ -16,7 +16,7 @@ public class CardPayment {
     public CardPayment (Nif nif, BigDecimal imp) { // Initializes attributes
         this.reference = ;
         this.nif = nif;
-        this.date = ;
+        this.date = new Date();
         this.imp = imp;
     }
 

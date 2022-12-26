@@ -13,12 +13,19 @@ public class UnifiedPlatform {
     //Cas d'ús a desenvolupar: SOL·LICITAR CERTIFICAT D'ANTECEDENTS PENALS
 
     //Variables
-    enum service {JUSTICEMINISTRY, CAS, CERTIFICATIONAUTHORITY, GPD};
-
     private JusticeMinistry justiceMinistry;
     private CAS cas;
     private CertificationAuthority certificationAuthority;
     private GPD gpd;
+
+    private boolean registered = false; // citizen registered in Cl@ve PIN system
+
+    // Instances created during process
+    private Citizen persData;
+    private Goal gl;
+    private CreditCard credC;
+    private CardPayment cPay;
+    private PDFDocument doc;
 
     //Constructor
 
@@ -57,30 +64,45 @@ public class UnifiedPlatform {
 
     public void selectAuthMethod (byte opc) { . . . };
 
-    public void enterNIFandPINobt (Nif nif, Date valDate) { . . . } throws
+    public void enterNIFandPINobt (Nif nif, Date valDate) throws
     NifNotRegisteredException, IncorrectValDateException,
-    AnyMobileRegisteredException, ConnectException;
+    AnyMobileRegisteredException, ConnectException {
 
-    public void enterPIN (SmallCode pin) { . . . } throws NotValidPINException,
-    ConnectException;
+    }
 
-    private void enterForm (Citizen citz, Goal goal) { . . . }
-    throws IncompleteFormException, IncorrectVerificationException, ConnectException;
-    // DGP ha de verificar les dades
+    public void enterPIN (SmallCode pin) throws NotValidPINException,
+    ConnectException {
+        //certificationAuthority.sendPIN();
+        //certificationAuthority.checkPIN();
+    }
+
+    private void enterForm (Citizen citz, Goal goal)
+    throws IncompleteFormException, IncorrectVerificationException, ConnectException {
+        this.persData = citz;
+        this.gl = goal;
+        gpd.verifyData(persData, gl);
+    }
 
     private void realizePayment () { . . . };
 
     private void enterCardData (CreditCard cardD)
     throws IncompleteFormException, NotValidPaymentDataException,
             InsufficientBalanceException, ConnectException {
-        if (cardD == null) {
-            throw new IncompleteFormException();
-        }
-        // Certification Authority ho ha de verificar
+        this.credC = cardD;
+        this.cPay = new CardPayment(new Nif(persData.getNif()), );
+        cas.askForApproval(credC );
     }
 
-    private void obtainCertificate () { . . . } throws BadPathException, DigitalSignatureException,
-    ConnectException;
+    private void obtainCertificate () throws BadPathException, DigitalSignatureException,
+    ConnectException {
+        try {
+            this.doc = new CriminalRecordCertf(persData.getNif(), persData.getName(), gl, );
+            this.doc.moveDoc("ruta/local/temporal");
+            this.doc.openDoc("visualización");
+        } catch {
+            throw new ProceduralException();
+        }
+    }
 
     private void printDocument () { . . . } throws BadPathException, PrintingException;
 
