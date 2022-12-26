@@ -1,6 +1,6 @@
 package data;
 
-public class Goal {
+final public class Goal {
 
     enum goalTypes {WORKWITHMINORS, GAMESECTOR, PUBLICWORKERS, PUBLICADMINCONSORTIUM};
 

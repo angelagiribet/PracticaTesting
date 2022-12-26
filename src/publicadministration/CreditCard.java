@@ -30,9 +30,9 @@ public class CreditCard {
 
     @Override
     public String toString () {
-        return "CreditCard{" + "nif ciudadano=" + nif + '\''
-                + "número tarjeta crédito=" + cardNumb + '\''
-                + "fecha de expiración tarjeta=" + expirDate + '\''
-                + "código de seguridad" + svc + '\'' + '}';
+        return "CreditCard{" + "nif ciudadano='" + nif + '\''
+                + "número tarjeta crédito'=" + cardNumb + '\''
+                + "fecha de expiración tarjeta='" + expirDate + '\''
+                + "código de seguridad='" + svc + '\'' + '}';
     } // converts to String
 }

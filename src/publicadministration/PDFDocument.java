@@ -25,7 +25,7 @@ public class PDFDocument {
     public String getFile () { return file.toString();}
 
     public String toString () {
-        return "PDFDocument{" + "fecha creación=" + creatDate + '\'' + "ruta documento=" + path + '\'' + '}';
+        return "PDFDocument{" + "fecha creación='" + creatDate + '\'' + "ruta documento='" + path + '\'' + '}';
     }// Converts to String members Date & DocPath
 
     // To implement only optionally

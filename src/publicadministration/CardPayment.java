@@ -29,8 +29,8 @@ public class CardPayment {
     @Override
     public String toString () {
         return "CardPayment{" + "código operación=" + reference + '\''
-                + "nif ciudadano=" + nif + '\''
-                + "fecha=" + date + '\''
-                + "importe del pago=" + imp + '\'' + '}';
+                + "nif ciudadano'=" + nif + '\''
+                + "fecha'=" + date + '\''
+                + "importe del pago='" + imp + '\'' + '}';
     } // converts to String
 }

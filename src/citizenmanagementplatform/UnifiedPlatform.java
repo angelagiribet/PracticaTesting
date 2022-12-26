@@ -13,6 +13,7 @@ public class UnifiedPlatform {
     //Cas d'ús a desenvolupar: SOL·LICITAR CERTIFICAT D'ANTECEDENTS PENALS
 
     //Variables
+    enum service {JUSTICEMINISTRY, CAS, CERTIFICATIONAUTHORITY, GPD};
 
     private JusticeMinistry justiceMinistry;
     private CAS cas;

@@ -1,6 +1,6 @@
 package data;
 
-public class SmallCode {
+final public class SmallCode {
 
     // Codi de 3 dígits utilitzat per al Safe Verification Code i també pel Sistema Cl@ve
     // Es guarda com un String

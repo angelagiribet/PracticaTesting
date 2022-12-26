@@ -1,6 +1,6 @@
 package data;
 
-public class DigitalSignature {
+final public class DigitalSignature {
 
     // S'utilitza per representar la firma electrònica
     // Es representa com un byte[]

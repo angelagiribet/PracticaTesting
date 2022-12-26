@@ -25,7 +25,7 @@ public class CrimConviction {
     public String getSentence() { return sentence; }
 
     public String toString () {
-        return "CrimConviction{" + "fecha cometido=" + commitDate + '\'' + "ofensa=" + offense + '\'' + "sentencia"
+        return "CrimConviction{" + "fecha cometido='" + commitDate + '\'' + "ofensa='" + offense + '\'' + "sentencia='"
                 + sentence + '\'' + '}';
     } // converts to String
 }

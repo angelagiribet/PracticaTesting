@@ -12,7 +12,11 @@ public class Citizen {
 
     // Other additional information (not required)
 
-    public Citizen (String name, String add, String mobile){ ... } //  Initializes attributes
+    public Citizen (String name, String add, String mobile){
+        this.name = name;
+        this.address = add;
+        this.mobileNumb = mobile;
+    } //  Initializes attributes
 
     // the getters
     public String getNif() { return nif.toString(); }
@@ -22,8 +26,8 @@ public class Citizen {
 
     public String toString () {
         return "Ciudadano{" + "nif ciudadano='" + nif + '\''
-                + "nombre ciudadano=" + name + '\''
-                + "dirección ciudadano=" + address + '\''
-                + "teléfono ciudadano=" + mobileNumb + '\'' + '}';
+                + "nombre ciudadano='" + name + '\''
+                + "dirección ciudadano='" + address + '\''
+                + "teléfono ciudadano='" + mobileNumb + '\'' + '}';
     } // converts to String
 }

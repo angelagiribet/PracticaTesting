@@ -1,6 +1,6 @@
 package data;
 
-public class DocPath {
+final public class DocPath {
 
     // Ruta en el sistema d'arxius
     // Es representa com un String

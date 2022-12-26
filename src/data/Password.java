@@ -1,6 +1,6 @@
 package data;
 
-public class Password {
+final public class Password {
 
     // És opcional
     // Cl@ve permanent

@@ -8,7 +8,7 @@ final public class Nif {
     private final String nif;
 
 
-    public Nif (String code) throws IllegalAccessException {
+    public Nif (String code) {
         if(code == null || code.trim().isEmpty()) {
             throw new IllegalArgumentException("No se ha introducido ningún código.");
         } // Excepció en què al constructor li arriba null (objecte sense instanciar)
@@ -20,7 +20,7 @@ final public class Nif {
 
     public String getNif () { return nif; }
 
-    public void isOkay (String code) {
+    public boolean isOkay (String code) {
         // definir un mètode que comprovi si el Nif està correctament format?
         return true;
     }
