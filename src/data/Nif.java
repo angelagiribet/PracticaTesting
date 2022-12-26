@@ -10,7 +10,7 @@ final public class Nif {
 
     public Nif (String code) throws IllegalAccessException {
         if(code == null || code.trim().isEmpty()) {
-            throw new IllegalArgumentException("No se ha introducido ningún código");
+            throw new IllegalArgumentException("No se ha introducido ningún código.");
         } // Excepció en què al constructor li arriba null (objecte sense instanciar)
         isOkay(code);
             throw new IllegalArgumentException("No se ha introducido el NIF correctamente.");

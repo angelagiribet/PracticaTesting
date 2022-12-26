@@ -1,16 +1,33 @@
 package data;
 
 import org.junit.jupiter.api.Test;
-import data.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 public class NifTest {
 
     @Test
-    public void TestingConstructorNull () {}
+    public void TestingConstructorNull () {
+        Exception exception = assertThrows( IllegalArgumentException.class, () -> {
+                Nif nif = new Nif (null);
+        });
+
+        String expectedMessage = "No se ha introducido ningún código.";
+        String actualMessage = exception.getMessage();
+
+        assertTrue(actualMessage.contains(expectedMessage));
+    }
 
     @Test
-    public void TestingConstructorWrongObject () {}
+    public void TestingConstructorWrongObject () {
+        Exception exception = assertThrows( IllegalArgumentException.class, () -> {
+            Nif nif = new Nif ("código incorrecto");
+        });
+
+        String expectedMessage = "No se ha introducido el NIF correctamente.";
+        String actualMessage = exception.getMessage();
+
+        assertTrue(actualMessage.contains(expectedMessage));
+    }
 
     @Test
     public void TestingToString () {
