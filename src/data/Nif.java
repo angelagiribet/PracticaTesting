@@ -12,7 +12,7 @@ final public class Nif {
 
         if(code == null || code.trim().isEmpty()) {
             throw new IllegalArgumentException("No se ha introducido ningún código.");
-        } else if (!isOkay(code)) {
+        } else if (!isOkayNif(code)) {
             throw new IllegalArgumentException("No se ha introducido el NIF correctamente.");
         }
 
@@ -21,7 +21,8 @@ final public class Nif {
 
     public String getNif () { return nif; }
 
-    public boolean isOkay (String code) {
+    public boolean isOkayNif (String code) {
+
         if (code.length() != 9) {
             return false;
         } else {
@@ -29,6 +30,7 @@ final public class Nif {
                 return false;
             }
         }
+
         return true;
     }
 

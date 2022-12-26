@@ -1,4 +1,5 @@
 package data;
+import java.io.File;
 
 final public class DocPath {
 
@@ -7,7 +8,25 @@ final public class DocPath {
 
     private final String docPath;
 
-    public DocPath (String docPath) { this.docPath = docPath; }
+    public DocPath (String docPath) {
+
+        if(docPath == null || docPath.trim().isEmpty()) {
+            throw new IllegalArgumentException("No se ha introducido ningún código.");
+        } else if (!isOkayPath(docPath)) {
+            throw new IllegalArgumentException("No se ha introducido la ruta correctamente.");
+        }
+
+        this.docPath = docPath;
+    }
+
+    public String getDocPath() { return docPath; }
+
+    public boolean isOkayPath (String docPath) {
+
+        File path = new File(docPath);
+
+        return path.isDirectory();
+    }
 
     @Override
     public boolean equals (Object o) {
