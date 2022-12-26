@@ -1,3 +1,5 @@
+package citizenmanagementplatform;
+
 import data.*;
 import publicadministration.*;
 import services.*;
