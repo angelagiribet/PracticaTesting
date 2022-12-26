@@ -9,19 +9,26 @@ final public class Nif {
 
 
     public Nif (String code) {
+
         if(code == null || code.trim().isEmpty()) {
             throw new IllegalArgumentException("No se ha introducido ningún código.");
-        } // Excepció en què al constructor li arriba null (objecte sense instanciar)
-        isOkay(code);
+        } else if (!isOkay(code)) {
             throw new IllegalArgumentException("No se ha introducido el NIF correctamente.");
         }
+
         this.nif = code;
     }
 
     public String getNif () { return nif; }
 
     public boolean isOkay (String code) {
-        // definir un mètode que comprovi si el Nif està correctament format?
+        if (code.length() != 9) {
+            return false;
+        } else {
+            if (!code.substring(0, 7).matches("[0-9]*") & !code.substring(8).matches("[A-Z]*")){
+                return false;
+            }
+        }
         return true;
     }
 
