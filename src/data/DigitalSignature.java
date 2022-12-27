@@ -1,7 +1,5 @@
 package data;
 
-import exceptions.DigitalSignatureException;
-
 final public class DigitalSignature {
 
     // S'utilitza per representar la firma electrònica
@@ -9,7 +7,14 @@ final public class DigitalSignature {
 
     private final byte[] digSign;
 
-    public DigitalSignature (byte[] digSign) { this.digSign = digSign; }
+    public DigitalSignature (byte[] digSign) {
+
+        if (digSign == null) {
+            throw new IllegalArgumentException("No se ha introducido ninguna firma.");
+        }
+
+        this.digSign = digSign;
+    }
 
     @Override
     public boolean equals (Object o) {
