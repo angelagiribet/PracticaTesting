@@ -90,7 +90,7 @@ public class UnifiedPlatform {
             InsufficientBalanceException, ConnectException {
         this.credC = cardD;
         this.cPay = new CardPayment(new Nif(persData.getNif()), );
-        cas.askForApproval(credC );
+        cas.askForApproval(credC);
     }
 
     private void obtainCertificate () throws BadPathException, DigitalSignatureException,

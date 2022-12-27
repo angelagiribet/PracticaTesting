@@ -1,5 +1,7 @@
 package data;
 
+import exceptions.DigitalSignatureException;
+
 final public class DigitalSignature {
 
     // S'utilitza per representar la firma electrònica

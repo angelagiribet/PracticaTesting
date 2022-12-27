@@ -12,7 +12,8 @@ public class Citizen {
 
     // Other additional information (not required)
 
-    public Citizen (String name, String add, String mobile){
+    public Citizen (Nif nif, String name, String add, String mobile){
+        this.nif = nif;
         this.name = name;
         this.address = add;
         this.mobileNumb = mobile;

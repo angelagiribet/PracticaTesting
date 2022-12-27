@@ -13,6 +13,6 @@ import java.net.ConnectException;
 
 public interface JusticeMinistry { // External service for the Justice Ministry
 
-    public CriminalRecordCertf getCriminalRecordCertf (Citizen persD, Goal g)
+    CriminalRecordCertf getCriminalRecordCertf (Citizen persD, Goal g)
             throws DigitalSignatureException, ConnectException;
 }
