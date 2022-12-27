@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="658a2027-5b36-4804-b095-f8e137dbe1e5" name="Default Changelist" comment="Petites modificacions per treure errors." />
+    <list default="true" id="658a2027-5b36-4804-b095-f8e137dbe1e5" name="Default Changelist" comment="Excepció per firma no existent." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2JT4ED5wyHdKNYusmQYJkybC3MJ" />
@@ -42,7 +47,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672145255677</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Excepció per firma no existent.">
+      <created>1672146419730</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672146419730</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -50,7 +62,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Nif.java" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -60,6 +84,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Modificafions en SmallCode i DocPath." />
     <MESSAGE value="Petites modificacions per treure errors." />
-    <option name="LAST_COMMIT_MESSAGE" value="Petites modificacions per treure errors." />
+    <MESSAGE value="Excepció per firma no existent." />
+    <option name="LAST_COMMIT_MESSAGE" value="Excepció per firma no existent." />
   </component>
 </project>
