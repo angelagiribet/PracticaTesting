@@ -2,6 +2,7 @@ package data;
 
 final public class SmallCode {
 
+    //Prova200
     // Codi de 3 dígits utilitzat per al Safe Verification Code i també pel Sistema Cl@ve
     // Es guarda com un String
 
