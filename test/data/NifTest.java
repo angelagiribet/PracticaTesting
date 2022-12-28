@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 public class NifTest {
 
+    //Això sol es una prova
+
     @Test
     public void TestingConstructorNull () {
         Exception exception = assertThrows( IllegalArgumentException.class, () -> {
