@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="658a2027-5b36-4804-b095-f8e137dbe1e5" name="Default Changelist" comment="Excepció per firma no existent.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="658a2027-5b36-4804-b095-f8e137dbe1e5" name="Default Changelist" comment="Excepció per firma no existent." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +10,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Implementation_smallcode" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +55,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672146419730</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Prova">
+      <created>1672219492434</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672219492434</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -71,7 +76,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Nif.java" />
+                        <option value="Implementation_package_data" />
                       </list>
                     </value>
                   </entry>
@@ -88,6 +93,7 @@
     <MESSAGE value="Modificafions en SmallCode i DocPath." />
     <MESSAGE value="Petites modificacions per treure errors." />
     <MESSAGE value="Excepció per firma no existent." />
-    <option name="LAST_COMMIT_MESSAGE" value="Excepció per firma no existent." />
+    <MESSAGE value="Prova" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prova" />
   </component>
 </project>
