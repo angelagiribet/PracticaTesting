@@ -8,7 +8,7 @@ public class NifTest {
     //Això sol es una prova
 
     @Test
-    public void TestingConstructorNull () {
+    public void testingConstructorNull () {
         Exception exception = assertThrows( IllegalArgumentException.class, () -> {
                 Nif nif = new Nif (null);
         });
@@ -20,7 +20,7 @@ public class NifTest {
     }
 
     @Test
-    public void TestingConstructorWrongObject () {
+    public void testingConstructorWrongObject () {
         Exception exception = assertThrows( IllegalArgumentException.class, () -> {
             Nif nif = new Nif ("código incorrecto");
         });
@@ -32,14 +32,14 @@ public class NifTest {
     }
 
     @Test
-    public void TestingToString () {
+    public void testingToString () {
         Nif nif = new Nif ("12345678A");
         String nifString = "Nif{nif ciudadano=12345678A";
         assertEquals(nif.toString(), nifString);
     }
 
     @Test
-    public void TestingEquals () {
+    public void testingEquals () {
         Nif nif1 = new Nif ("12345678A");
         Nif nif2 = new Nif ("12345678A");
         assertTrue(nif1.equals(nif2));
